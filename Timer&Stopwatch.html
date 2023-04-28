@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Stopwatch and Timer</title>
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+		text-align: center;
+	}
+
+	h1 {
+		margin-top: 20px;
+	}
+
+	.container {
+		margin: 50px 450px;
+		justify-content: space-around;
+		margin-top: 50px;
+		border: 2px solid #FFCEFE;
+		border-radius: 30px;
+		background-color:#FFCEFE;
+	}
+
+	.stopwatch, .timer {
+		background-color: #ffffff;
+		padding: 20px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		margin: 50px 50px;
+		line-height: 40px;
+		border-radius: 30px;
+		font-family: 'Archivo Black', sans-serif;
+	}
+
+	.display {
+		font-size: 40px;
+		margin: 20px 0px;
+	}
+
+	label {
+		margin-right: 10px;
+	}
+
+	input {
+		padding: 5px;
+		font-size: 16px;
+		width: 100px;
+	}
+
+	button {
+		background-color: #537FE7;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		border: none;
+		font-size: 16px;
+		margin: 5px;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: #BE6DB7;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>Stopwatch and Timer</h1>
+	<div class="container">
+		<div class="stopwatch">
+			<h2>Stopwatch</h2>
+			<div class="display">
+				<span class="minutes">00</span>:<span class="seconds">00</span>:<span class="milliseconds">000</span>
+			</div>
+			<button class="start">Start</button>
+			<button class="stop">Stop</button>
+			<button class="reset">Reset</button>
+		</div>
+		<div class="timer">
+			<h2>Timer</h2>
+			<div class="display">
+				<span class="minutes">00</span>:<span class="seconds">00</span>
+			</div>
+			<label>Set time (in minutes):</label>
+			<input type="number" id="time-input" min="1" max="120"></br>
+			<button class="start">Start</button>
+			<button class="stop">Stop</button>
+			<button class="reset">Reset</button>
+		</div>
+	</div>
+	<script src="timer_js.js"></script>
+</body>
+</html>
